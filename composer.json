@@ -19,7 +19,7 @@
     },
     "autoload": {
         "psr-4": {
-            "uhi67\\Showdown\\": ""
+            "uhi67\\showdown\\": ""
         }
     }
 }
