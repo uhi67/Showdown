@@ -1,0 +1,54 @@
+/*
+	Default formatting for showdown blocks
+*/
+
+div.block div.showdown {
+	margin-left: 12px;
+	
+	h1, h2, h3, h4, h5 {
+		padding-left:0;
+		font-family: 'Consolas';
+		margin-left:0;
+	}
+	
+	p {
+		margin-left:0;
+		padding-left: 0;
+	}
+	
+	ul {
+		list-style: square;
+		margin-left:24px;
+	}
+	
+	ol {
+		margin-left:24px;
+	}
+	
+	img {
+		vertical-align: baseline;
+	}
+	
+	table { 
+		background:#eee;
+		padding-top: 6px;
+		border: 2px solid #eee;
+		vertical-align: top;
+		margin-bottom: 0;
+		tr { background:transparent; height:22px;}
+		th, div.showdown table td { padding: 1px 2px; } 
+		th { 
+			color:inherit; 
+			font-weight:bold; 
+			background: #ddd; 
+			text-align:left; 
+			padding-right:4px;
+		}
+	}
+	
+	code {
+		font-family: "Consolas",courier,monospace;
+		background-color: #eeeeef;
+		color: #115;
+	}
+}
