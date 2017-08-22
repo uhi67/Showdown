@@ -37,7 +37,7 @@ git clone https://github.com/uhi67/showdown
 ```
 <?php
 	// ...
-	uhi67\Showdown\ShowdownAsset::register($this); // or put this into the global layout
+	uhi67\showdown\ShowdownAsset::register($this); // or put this into the global layout
 ?>
 <div class="showdown">
 	<pre class="markdown"><?= $content ?></pre>
