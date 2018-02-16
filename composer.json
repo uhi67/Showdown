@@ -2,7 +2,7 @@
     "name": "uhi67/showdown",
     "description": "Markdown converter module for Yii2",
     "type": "yii2-extension",
-    "license": "GNU",
+    "license": "GPL-3.0-or-later",
     "authors": [
         {
             "name": "Uherkovich Péter",
