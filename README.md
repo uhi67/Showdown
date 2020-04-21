@@ -3,6 +3,8 @@ Showdown module
 
 Showdown.js interface for Yii2
 
+Version 1.1 -- release 2020-04-21
+
 Based on https://github.com/showdownjs
 
 [Detailed documentation of showdownjs](https://github.com/showdownjs/showdown/wiki)
@@ -45,4 +47,9 @@ git clone https://github.com/uhi67/showdown
 ```
 
 where `$content` is the markdown content readed from your .md file.
-  
+
+# Change log
+
+### 1.1
+
+- simpleLineBreaks option changed to false -- now ignores simple line breaks in source
