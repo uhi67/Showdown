@@ -1,0 +1,57 @@
+/*
+	Default formatting for showdown blocks
+*/
+div.block div.showdown {
+  margin-left: 12px;
+}
+div.block div.showdown h1,
+div.block div.showdown h2,
+div.block div.showdown h3,
+div.block div.showdown h4,
+div.block div.showdown h5 {
+  padding-left: 0;
+  font-family: 'Consolas';
+  margin-left: 0;
+}
+div.block div.showdown p {
+  margin-left: 0;
+  padding-left: 0;
+}
+div.block div.showdown ul {
+  list-style: square;
+  margin-left: 24px;
+}
+div.block div.showdown ol {
+  margin-left: 24px;
+}
+div.block div.showdown img {
+  vertical-align: baseline;
+}
+div.block div.showdown table {
+  background: #eee;
+  padding-top: 6px;
+  border: 2px solid #eee;
+  vertical-align: top;
+  margin-bottom: 0;
+}
+div.block div.showdown table tr {
+  background: transparent;
+  height: 22px;
+}
+div.block div.showdown table th,
+div.block div.showdown table div.showdown table td {
+  padding: 1px 2px;
+}
+div.block div.showdown table th {
+  color: inherit;
+  font-weight: bold;
+  background: #ddd;
+  text-align: left;
+  padding-right: 4px;
+}
+div.block div.showdown code {
+  font-family: "Consolas", courier, monospace;
+  background-color: #eeeeef;
+  color: #115;
+}
+/*# sourceMappingURL=Showdown.css.map */
