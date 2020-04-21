@@ -5,24 +5,27 @@
  
 console.log('showdown.js v1.0');
 
-var linkbase = '';
+const linkbase = '';
 
- $(function() {
-	var flavor = 'github';
-	showdown.setFlavor('github');
-	var linkreplace = function() {
+$(function() {
+	const flavor = 'github';
+	showdown.setFlavor(flavor);
+	const linkreplace = function () {
 		return [
 			{
 				type: 'output',
 				regex: /(href|src)="([^:"]+)"/g,
-				replace: '$1="'+linkbase+'$2"'
+				replace: '$1="' + linkbase + '$2"'
 			}
 		];
 	};
 	showdown.extension('linkreplace', linkreplace);
  	$('pre.markdown').each( function(){
- 		var converter = new showdown.Converter({extensions:['linkreplace']});
- 		//console.log('4 Converting '+$(this).text());
+		const converter = new showdown.Converter({
+			extensions: ['linkreplace'],
+			simpleLineBreaks: false
+		});
+		//console.log('4 Converting '+$(this).text());
  		$(this).replaceWith(converter.makeHtml($(this).text()));
  	});
 });
