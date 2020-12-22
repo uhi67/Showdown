@@ -3,11 +3,22 @@
  * Yii2 interface to showdown module
  */
  
-console.log('showdown.js v1.0');
+console.log('showdown.js v1.2');
 
 const linkbase = '';
 
 $(function() {
+	/**
+	 * 'simple' version removes links and images
+	 */
+	$('pre.markdown.simple').each(function() {
+		this.innerHTML = this.innerHTML
+			.replaceAll(/!?\[([^\]]+)]\([^)]+\)/g, '[$1] ')
+			.replaceAll(/!\[([^\]]+)]\[[^\]]+]/g, '[$1] ')
+			.replaceAll(/\[([^\]]+)]: [^\s]+(\s+"[^"]+")?/g, '');
+		console.log(this.innerHTML);
+	});
+
 	const flavor = 'github';
 	showdown.setFlavor(flavor);
 	const linkreplace = function () {

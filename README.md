@@ -3,27 +3,27 @@ Showdown module
 
 Showdown.js interface for Yii2
 
-Version 1.1 -- release 2020-04-21
+Version 1.2 -- release 2020-12-22
 
-Based on https://github.com/showdownjs
+Based on https://github.com/showdownjs version 1.7.1
 
 [Detailed documentation of showdownjs](https://github.com/showdownjs/showdown/wiki)
 
 
 # Installation
-
+git tag 
 The preferred way to install this extension is through composer.
 
 To install, either run
 
 ```
-composer require uhi67/showdown "1.0.*" 
+composer require uhi67/showdown "^1.2" 
 ```
 
 or add
 
 ```
-"uhi67/showdown" : "1.0.*"
+"uhi67/showdown" : "^1.2"
 ```
 
 or clone form github
@@ -50,6 +50,10 @@ where `$content` is the markdown content readed from your .md file.
 
 # Change log
 
-### 1.1
+### 1.2 -- 2020-12-22
+
+- if .simple class is used in pre.markdown, will not render links and images
+
+### 1.1 -- 2020-04-21
 
 - simpleLineBreaks option changed to false -- now ignores simple line breaks in source
