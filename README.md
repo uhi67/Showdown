@@ -3,7 +3,7 @@ Showdown module
 
 Showdown.js interface for Yii2
 
-Version 1.2 -- release 2020-12-22
+Version 1.2.1 -- release 2021-02-03
 
 Based on https://github.com/showdownjs version 1.7.1
 
@@ -11,7 +11,7 @@ Based on https://github.com/showdownjs version 1.7.1
 
 
 # Installation
-git tag 
+
 The preferred way to install this extension is through composer.
 
 To install, either run
@@ -49,6 +49,10 @@ git clone https://github.com/uhi67/showdown
 where `$content` is the markdown content readed from your .md file.
 
 # Change log
+
+### 1.2.1 -- 2021-02-03
+
+- Replaces "--" (double hyphen) to mdash character
 
 ### 1.2 -- 2020-12-22
 
