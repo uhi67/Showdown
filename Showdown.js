@@ -27,6 +27,11 @@ $(function() {
 				type: 'output',
 				regex: /(href|src)="([^:"]+)"/g,
 				replace: '$1="' + linkbase + '$2"'
+			},
+			{
+				type: 'output',
+				regex: /(?<=\s|>|^)--(?=\s|<|$)/g,
+				replace: '&mdash;'
 			}
 		];
 	};
