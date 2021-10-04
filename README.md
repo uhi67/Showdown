@@ -3,7 +3,7 @@ Showdown module
 
 Showdown.js interface for Yii2
 
-Version 1.2.1 -- release 2021-02-03
+Version 1.2.2 -- release 2021-10-04
 
 Based on https://github.com/showdownjs version 1.7.1
 
@@ -49,6 +49,10 @@ git clone https://github.com/uhi67/showdown
 where `$content` is the markdown content readed from your .md file.
 
 # Change log
+
+### 1.2.2 -- 2021-10-04
+
+- Removed unnecessary trace 
 
 ### 1.2.1 -- 2021-02-03
 

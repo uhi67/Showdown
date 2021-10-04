@@ -2,7 +2,7 @@
  * Showdown.js
  * Yii2 interface to showdown module
  */
- 
+
 console.log('showdown.js v1.2');
 
 const linkbase = '';
@@ -16,7 +16,7 @@ $(function() {
 			.replaceAll(/!?\[([^\]]+)]\([^)]+\)/g, '[$1] ')
 			.replaceAll(/!\[([^\]]+)]\[[^\]]+]/g, '[$1] ')
 			.replaceAll(/\[([^\]]+)]: [^\s]+(\s+"[^"]+")?/g, '');
-		console.log(this.innerHTML);
+		//console.log(this.innerHTML);
 	});
 
 	const flavor = 'github';
